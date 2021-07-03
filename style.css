@@ -3,4 +3,8 @@ body{
 }
 h1{
     font-size: 60px;
+    color: black;
+}
+.gold{
+    color: gold;
 }
