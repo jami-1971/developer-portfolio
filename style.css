@@ -21,6 +21,7 @@ p{
 }
 section{
     display: flex;
+    margin-bottom: 10%;
 }
 .half-width{
     width: 70%;
