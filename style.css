@@ -22,7 +22,7 @@ p{
 section{
     display: flex;
 }
-half-width{
+.half-width{
     width: 70%;
     padding-left: 20%;
 }
