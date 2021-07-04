@@ -52,5 +52,6 @@ p{
     margin-left: 5%;
     margin-right: 5%;
     padding-left: 20px;
-    border: mediumblue;
+    border-left: mediumblue;
+    border-top: olive;
 }
