@@ -55,3 +55,8 @@ p{
     border-left: mediumblue;
     border-top: olive;
 }
+#web-dev-experi{
+   border-image: linear-gradient(blue cyan);
+   border-image-slice: 1;
+    
+}
