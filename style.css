@@ -25,6 +25,7 @@ section{
 .half-width{
     width: 70%;
     padding-left: 10%;
+    padding-top: 10%;
 }
 .link-button{
     text-decoration: chartreuse;
