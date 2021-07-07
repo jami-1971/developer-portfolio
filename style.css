@@ -12,6 +12,11 @@ h2{
 .gold-color{
     color: gold;
 }
+.gold-color:hover{
+    color: blanchedalmond;
+    background-image: linear-gradient(red yellow);
+    
+}
 h3{
     font-size: 45px;
     font-family: fantasy ;
