@@ -1,7 +1,8 @@
 .transition{
     background-color: chartreuse;
     color: crimson;
-    transition: width 3s height 3s transform 5s;
+    transition: linear 3s;
+    transition: width 2s, height 2s transform 5s;
 
 }
 .transition:hover{
