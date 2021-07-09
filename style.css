@@ -3,6 +3,7 @@
     color: crimson;
     transition: linear 3s;
     transition: width 2s, height 2s transform 5s;
+    border: 2px solid black;
 
 }
 .transition:hover{
