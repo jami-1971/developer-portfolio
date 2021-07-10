@@ -121,43 +121,54 @@ footer p{
     transform: translate(600px, -200px);
 }
 
-        @keyframes sliding {
-            from {
-                background-color: violet;
-                right: 0;
+@keyframes sliding {
+    0% {
+        background-color: violet;
+        left: 0;
+        top: 0;
 
-            }
-
-            to {
-                background-color: black;
-                left: 200px;
-            }
-
-        }
-
-        .stage {
-            width: 300px;
-            height: 300px;
-            background-color: yellow;
-        }
-
-        .balll {
-            width: 50px;
-            height: 50px;
-
-            background-color: black;
-            border-radius: 50%;
-            position: relative;
-            animation: sliding 1s ease 1s infinite alternate;
-            animation-play-state: running;
-            
+    }
 
 
 
+    50% {
+        top: 250px;
+        transform: scale(1);
+    }
 
 
-        }
-    
+
+    100% {
+        background-color: black;
+        left: 550px;
+        top: 0;
+        transform: scale(1);
+    }
+
+}
+
+.stage {
+    width: 600px;
+    height: 300px;
+    background-color: yellow;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    animation: sliding 1s ease-in-out 1s infinite alternate;
+    animation-play-state: running;
+
+
+
+
+
+
+}
 
 
 
