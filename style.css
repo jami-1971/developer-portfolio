@@ -141,7 +141,7 @@ footer p{
             background-color: yellow;
         }
 
-        .ball {
+        .balll {
             width: 50px;
             height: 50px;
 
@@ -150,8 +150,7 @@ footer p{
             position: relative;
             animation: sliding 1s ease 1s infinite alternate;
             animation-play-state: running;
-            animation-duration: ;
-            transform: ;
+            
 
 
 
