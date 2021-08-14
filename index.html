@@ -402,7 +402,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <b><b>yeeeeeeeeeeeeee -_-</b></b>
+                            <b><b>Babuuuuuuuuuuuuuuuuu </b></b>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -558,6 +558,23 @@
             </div>
 
         </section>
+        <section id="tekina">
+
+            <ul id="item-container">
+                <li class="item m-5 rounded-pill  h-20 w-50 bg-warning text-center p-5 d-flex justify-content-center"
+                    id="tekina">
+                    <h2><b><b>ei box e haath diba na
+                                ekdm .
+                                lag
+                                kolbo</b></b></h2>
+                </li>
+
+            </ul>
+            <button id="add-item" class="btn btn-primary m-5 rounded-pill h1 h-50 w-20 h3 ">hath diso na? lag kolsi
+                ami</button>
+
+
+        </section>
         <div class="field">
             <img class="bat" src="bat (2).png" alt="">
             <div class="ball"></div>
@@ -585,6 +602,31 @@
             else {
                 document.getElementById('delete-button').setAttribute('disabled', true);
             }
+        })
+
+
+
+
+
+
+    </script>
+
+    <script>
+        const items = document.getElementsByClassName('item');
+        for (const item of items) {
+            item.addEventListener('click', function () {
+
+                event.target.parentNode.removeChild(event.target);
+            })
+        }
+
+        document.getElementById('add-item').addEventListener('click', function () {
+            const li = document.createElement('li');
+            li.innerText = 'abar dile kintu mair khaba';
+            li.classList.add('item');
+            const parent = document.getElementById('item-container');
+            parent.appendChild(li);
+
         })
     </script>
 </body>
