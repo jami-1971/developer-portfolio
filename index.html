@@ -402,7 +402,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <b><b>BABUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU -_-</b></b>
+                            <b><b>yeeeeeeeeeeeeee -_-</b></b>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -463,6 +463,34 @@
                 <span class="visually-hidden">Loading...</span>
             </div>
         </section>
+
+
+
+
+
+
+
+
+
+        <section id="tekina">
+            <input id="text-box" type="text">
+            <button type="button" class="btn btn-primary m-5 rounded-pill h1 h-30 w-50 " id="delete-button"
+                data-bs-toggle="modal" data-bs-target="#exampleModal" disabled>kon sa
+                word?</button>
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
         <section id="tekina">
 
             <button class="btn btn-danger m-5 rounded-pill  h-30 w-50" type="button" data-bs-toggle="offcanvas"
@@ -547,6 +575,18 @@
         <p>AGAIN WELCOME TO OUR SITE ;)</p>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+
+
+        document.getElementById('text-box').addEventListener('keyup', function (text) {
+            if (text.target.value == 'butuputu') {
+                document.getElementById('delete-button').removeAttribute('disabled');
+            }
+            else {
+                document.getElementById('delete-button').setAttribute('disabled', true);
+            }
+        })
+    </script>
 </body>
 
 </html>
