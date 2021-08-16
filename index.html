@@ -16,8 +16,25 @@
 </head>
 
 <body>
+    <div class="text-center mb-5 mt-5">
 
+        <button id="makeBlueButton" class="btn   rounded-pill" style="background-color: blue;">Click me :
+            blue</button>
+        <button id="makeGreenButton" class="btn   rounded-pill" style="background-color: green;">Click me :
+            Green</button>
+        <button id="makeGoldenRodButton" class="btn  rounded-pill" style="background-color: goldenrod;">Click me
+            : Golden Button</button>
+        <button id="makeHotPinkButton" class="btn  rounded-pill" style="background-color: hotpink;">Click me :
+            Hot Pink</button>
+        <button id="makePurpleButton" class="btn  rounded-pill" style="background-color: purple;">Click me :
+            purple</button>
+        <button id="makeBlackButton" class="btn rounded-pill" style="background-color: black;">Click me :
+            black</button>
+
+
+    </div>
     <header class="d-flex justify-content-center ms-10 w-100 h-10 d-flex align-items-center ">
+
 
         <div id="carouselExampleCaptions" class="carousel slide bg-danger w-75 align-items-center"
             data-bs-ride="carousel">
@@ -628,6 +645,53 @@
             parent.appendChild(li);
 
         })
+    </script>
+    <script>
+        function makeRed(property) {
+            document.body.style.backgroundColor = 'red';
+        }
+
+        //handle blue button click by setting function name
+        const blueButton = document.getElementById('makeBlueButton');
+        blueButton.onclick = makeBlue;
+        // just set the name of the function 
+        function makeBlue(property) {
+            document.body.style.backgroundColor = 'blue';
+        }
+        console.log(blueButton);
+
+
+        // handle button anonymously 
+        const greenButton = document.getElementById('makeGreenButton');
+        // console.log(greenButton);
+        // no need to add function name while using directly
+        greenButton.onclick = function () {
+            document.body.style.backgroundColor = 'green';
+        }
+
+        // handle button using addEventListener
+        const GoldenButton = document.getElementById('makeGoldenRodButton');
+        GoldenButton.addEventListener('click', makeGoldenRod)
+
+        function makeGoldenRod() {
+            document.body.style.backgroundColor = 'gold';
+        }
+
+
+        const hotPinkButton = document.getElementById('makeHotPinkButton');
+        hotPinkButton.addEventListener('click', function makeHotPink() {
+            document.body.style.backgroundColor = 'hotpink';
+        })
+
+        // direct shot
+
+        document.getElementById('makePurpleButton').addEventListener('click', function () {
+            document.body.style.backgroundColor = 'purple';
+        })
+        document.getElementById('makeBlackButton').addEventListener('click', function () {
+            document.body.style.backgroundColor = 'black';
+        })
+
     </script>
 </body>
 
